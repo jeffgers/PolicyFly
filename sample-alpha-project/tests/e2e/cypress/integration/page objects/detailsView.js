@@ -2,6 +2,7 @@
 
 
 export const details = {
+    //Validates the Details View
     detailsView() {
         this.detailsViewSetup()
         cy.contains('Total Additions')
@@ -16,6 +17,7 @@ export const details = {
 
     },
 
+    //Sets up the details view for validation
     detailsViewSetup() {
         cy.get('tbody > :nth-child(1) > :nth-child(2)').then(($firstSHAResult) => {
             const firstSHAResult = $firstSHAResult.text()

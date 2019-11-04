@@ -2,7 +2,7 @@
 
 export const help = {
     
-    //Sets up state of test
+    //Sets up state the state of all tests
     setup() {
         cy.visit('/' + '/commits', {timeout: 2000})
         cy.clearCookies()
@@ -16,10 +16,4 @@ export const help = {
             .click()
 
     },
-
-    //Picks a random value from an array
-    randomValue(array) {
-        return array[Math.floor(Math.random() * array.length)];
-      }
-
 }

@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 export const auth = {
+    //Logs into GitHub. (NOTE:  This won't authenticate due to their Security Policy)
      githubLogin(username, password) {
         cy.wait(3000)
         cy.url().should('include', 'github.com/login')
