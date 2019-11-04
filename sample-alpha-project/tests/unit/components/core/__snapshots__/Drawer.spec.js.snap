@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer.vue should match snapshot 1`] = `
+<aside class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--light" style="height: 100%; margin-top: 0px; transform: translateX(0px); width: 200px;">
+  <div role="list" class="v-list pt-0 v-list--dense theme--light">
+    <hr class="v-divider theme--light">
+    <div role="listitem">
+      <router-link-stub class="v-list__tile v-list__tile--link theme--light">
+        <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-source-commit theme--light"></i></div>
+        <div class="v-list__tile__content">
+          <div class="v-list__tile__title">Commits</div>
+        </div>
+      </router-link-stub>
+    </div>
+  </div>
+  <div class="v-navigation-drawer__border"></div>
+</aside>
+`;

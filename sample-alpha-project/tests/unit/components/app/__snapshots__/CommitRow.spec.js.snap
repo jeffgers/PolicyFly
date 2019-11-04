@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommitRow.vue renders correctly when commit passed 1`] = `
+<tr>
+  <td>TestUsername</td>
+  <td>175b9acfd438be86de7687bc48bf9d84c0ee4949</td>
+  <td>Test Commit Message</td>
+  <td>2019-03-25T15:49:30.674Z</td>
+</tr>
+`;

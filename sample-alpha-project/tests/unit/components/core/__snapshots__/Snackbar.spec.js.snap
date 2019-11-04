@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snackbar.vue should match snapshot 1`] = `
+<div class="v-snack v-snack--active v-snack--bottom v-snack--right" name="v-snack-transition">
+  <div class="v-snack__wrapper error">
+    <div class="v-snack__content"><i aria-hidden="true" class="v-icon mdi mdi-alert-octagon theme--dark"></i> <span class="white--text">Error Message</span>
+      <!---->
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar.vue should match snapshot 1`] = `
+<nav class="v-toolbar v-toolbar--fixed theme--light" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);">
+  <div class="v-toolbar__content" style="height: 64px;">
+    <div class="v-toolbar__title headline"><span>Vuetify Repo</span></div>
+    <div class="spacer"></div> <button type="button" class="v-btn theme--light">GitHub Login</button>
+    <div class="v-toolbar__title"><span class="subheading font-weight-light">Requests Remaining: 60</span></div>
+    <div class="v-toolbar__title"><span class="subheading font-weight-light">Rate limit resets at: </span></div>
+  </div>
+</nav>
+`;

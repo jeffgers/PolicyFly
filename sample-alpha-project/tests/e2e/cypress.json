@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "viewportWidth": 1300,
+    "viewportHeight": 800
+}

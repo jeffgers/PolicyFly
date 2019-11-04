@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommitCard.vue renders correctly when commit loaded 1`] = `
+<v-card-stub tag="div">
+  <v-toolbar-stub card="true" flat="true" scrollthreshold="300">
+    <v-toolbar-side-icon-stub>
+      <v-icon-stub>mdi-chevron-left</v-icon-stub>
+    </v-toolbar-side-icon-stub>
+    <v-toolbar-title-stub></v-toolbar-title-stub>
+  </v-toolbar-stub>
+  <v-card-text-stub>
+    <v-layout-stub tag="div" row="" align-start="" justify-center="">
+      <v-flex-stub tag="div" xs6="" text-xs-center="">
+        <v-avatar-stub size="128px">
+          <v-img-stub src="https://avatars1.githubusercontent.com/u/27827979?v=4" position="center center" transition="fade-transition"></v-img-stub>
+        </v-avatar-stub> <br>
+        <div class="font-weight-bold title mt-3">
+          MajesticPotatoe
+        </div>
+      </v-flex-stub>
+      <v-flex-stub tag="div" xs6="">
+        <v-layout-stub tag="div" wrap="" pb-3="">
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="title">Total Additions</span></v-flex-stub>
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="title">Total Deletions</span></v-flex-stub>
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="title">Total Overall</span></v-flex-stub>
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="headline green--text">+1</span></v-flex-stub>
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="headline red--text">-1</span></v-flex-stub>
+          <v-flex-stub tag="div" xs4="" text-xs-center=""><span class="headline blue--text">2</span></v-flex-stub>
+        </v-layout-stub>
+        <v-subheader-stub>All Files Changed</v-subheader-stub>
+        <div class="scroll-y" style="overflow-x: hidden; max-height: 560px;">
+          <v-list-stub>
+            <v-list-tile-stub activeclass="primary--text">
+              <v-list-tile-content-stub></v-list-tile-content-stub>
+            </v-list-tile-stub>
+          </v-list-stub>
+        </div>
+      </v-flex-stub>
+    </v-layout-stub>
+  </v-card-text-stub>
+</v-card-stub>
+`;
+
+exports[`CommitCard.vue renders correctly when commit not loaded yet 1`] = `
+<v-card-stub tag="div">
+  <v-toolbar-stub card="true" flat="true" scrollthreshold="300">
+    <v-toolbar-side-icon-stub>
+      <v-icon-stub>mdi-chevron-left</v-icon-stub>
+    </v-toolbar-side-icon-stub>
+    <v-toolbar-title-stub></v-toolbar-title-stub>
+  </v-toolbar-stub>
+  <v-card-text-stub>
+    <v-layout-stub tag="div" row="" align-start="" justify-center="">
+      <v-progress-circular-stub color="primary" indeterminate="true" rotate="0" size="70" width="5" value="0"></v-progress-circular-stub>
+    </v-layout-stub>
+  </v-card-text-stub>
+</v-card-stub>
+`;
