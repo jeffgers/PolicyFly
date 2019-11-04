@@ -10,6 +10,7 @@ export const list = {
         cy.get('.v-list__tile__title', {timeout: 3000}).contains('Commits')
             .click()
         cy.url().should('include', '/commits', {timeout: 3000})
+        cy.wait(500)        
 
     },
 
@@ -20,12 +21,12 @@ export const list = {
 
         cy.get('.v-select__selections', {timeout: 3000})
             .click()        
-        cy.get('div[role=listitem]')
+        cy.get('div[role=listitem]', {timeout: 3000})
             .children()
             .contains('.v-list__tile__content', name, {timeout: 3000})
             .click()
 
-        cy.get('.v-select__selections')
+        cy.get('.v-select__selections', {timeout: 3000})
             .should('contain', name)
 
         cy.wait(500)
