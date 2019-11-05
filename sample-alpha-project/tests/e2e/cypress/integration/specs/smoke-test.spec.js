@@ -43,7 +43,6 @@ describe('Cypress tests for sample-alpha-project', () => {
     //This test validates the correct elements exist on the Details View
     it('Validates details view', () => {
         cy.fixture('data').then((data) => {
-            list.listViewSetup()
             details.detailsView(data.commit.sha)
     
         })

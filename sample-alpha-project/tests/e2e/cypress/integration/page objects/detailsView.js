@@ -1,9 +1,11 @@
 /// <reference types="cypress" />
 
+import { list } from '../page objects/listView'
 
 export const details = {
     //Validates the Details View
     detailsView() {
+        list.listViewSetup()
         this.detailsViewSetup()
         cy.contains('Total Additions')
         cy.contains('Total Deletions')
