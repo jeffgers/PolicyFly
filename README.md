@@ -1,2 +1,0 @@
-# PolicyFly
-Sample Project Deliverables
