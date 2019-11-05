@@ -2,7 +2,7 @@
 
 export const help = {
     
-    //Sets up state the state of all tests
+    //Sets up the state for all of the tests 
     setup() {
         cy.visit('/' + '/commits', {timeout: 2000})
         cy.clearCookies()
