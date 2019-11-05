@@ -21,7 +21,6 @@ export const details = {
     detailsViewSetup() {
         cy.get('tbody > :nth-child(1) > :nth-child(2)').then(($firstSHAResult) => {
             const firstSHAResult = $firstSHAResult.text()
-            cy.log(firstSHAResult)
         
             cy.get('tbody > :nth-child(1) > :nth-child(2)').click()
             cy.url().should('include', firstSHAResult, {timeout: 3000})
