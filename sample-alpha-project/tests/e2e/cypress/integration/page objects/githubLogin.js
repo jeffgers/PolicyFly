@@ -11,23 +11,23 @@ export const auth = {
         this.verifyGitHubLogin()
     },
 
+    //Clear out content of username textField and enter new one based on argument passed to parameter
     enterUsername(username) {
-         //Clear out content of username textField and enter new one based on argument passed to parameter
          cy.get('input[type=text')
             .should('have.id', 'login_field').and().should('be.visible').clear()
             .type(username).should('have.value', username)
 
     },
 
+    //Clear out content of password textField and enter new one based on argument passed to parameter
     enterPassword(password) {
-        //Clear out content of password textField and enter new one based on argument passed to parameter
          cy.get('input[type=password')
             .should('have.id', 'password').and().should('be.visible').clear()
             .type(password).should('have.value', password)
     },
-
+        
+    //Submits the login form
     submitLoginForm() {
-        //Submits the login form
         cy.get('input[type=submit')
         .should('have.value', 'Sign in')
         .and()
@@ -37,6 +37,7 @@ export const auth = {
 
     },
 
+    //Verify that GitHub authentication was a success
     verifyGitHubLogin() {
         cy.url().should('include', '/auth?code=')
         cy.contains('Authenticated')

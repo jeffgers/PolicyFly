@@ -10,7 +10,7 @@ export const list = {
         cy.get('.v-list__tile__title', {timeout: 3000}).contains('Commits')
             .click()
         cy.url().should('include', '/commits', {timeout: 3000})
-        cy.wait(500)        
+        cy.wait(1000)        
 
     },
 
@@ -19,6 +19,7 @@ export const list = {
         //Filters based on the contributor supplied to the parameter
         this.listViewSetup()
 
+        //Click the contributor defined by the parameter
         cy.get('.v-select__selections', {timeout: 3000})
             .click()        
         cy.get('div[role=listitem]', {timeout: 3000})
@@ -26,11 +27,13 @@ export const list = {
             .contains('.v-list__tile__content', name, {timeout: 3000})
             .click()
 
+        //Ensure the correct value appears in the Search field
         cy.get('.v-select__selections', {timeout: 3000})
             .should('contain', name)
 
         cy.wait(500)
 
+        //Ensure the contributor you searched for matches that of the results in 'Author' column
         cy.get('tbody > :nth-child(1) > :nth-child(1)').then(($firstAuthorResult) => {
         const firstAuthorResult = $firstAuthorResult.text()
         expect(firstAuthorResult).to.contain(name)
@@ -41,11 +44,13 @@ export const list = {
     filterSHA(sha) {
         this.listViewSetup()
 
+        //Type SHA into the textField
         cy.get('.v-text-field__slot', {timeout: 3000})
             .type(sha)
 
         cy.wait(500)
 
+        //Ensure the sha you searched for matches that of the results in the 'SHA Hash' column
         cy.get('tbody > :nth-child(1) > :nth-child(2)').then(($firstSHAResult) => {
         const firstSHAResult = $firstSHAResult.text()
         expect(firstSHAResult).to.contain(sha)
